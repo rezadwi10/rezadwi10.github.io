@@ -6,10 +6,19 @@
     <description>Recent content in Posts on TLDR;</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Sep 2019 11:41:04 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 10 Sep 2019 09:17:02 +0700</lastBuildDate>
     
 	<atom:link href="https://rezadwi10.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Node Screenshot Saved My Day</title>
+      <link>https://rezadwi10.github.io/posts/node-screenshot-saved-my-day/</link>
+      <pubDate>Tue, 10 Sep 2019 09:17:02 +0700</pubDate>
+      
+      <guid>https://rezadwi10.github.io/posts/node-screenshot-saved-my-day/</guid>
+      <description>&lt;p&gt;Technical Documentation is a must-thing which I need to provide as a part of deliverables from technical team.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>How to Query</title>

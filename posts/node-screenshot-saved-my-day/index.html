@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Posts</title>
+<title>Node Screenshot Saved My Day</title>
 <meta name="description" content="My daily notes as a Software Engineer">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="all,follow">
@@ -28,9 +28,6 @@
 
 <link href="https://rezadwi10.github.io/css/custom.css" rel="stylesheet">
 <link rel="shortcut icon" href="https://rezadwi10.github.io/img/favicon.png">
-
-  <link href="https://rezadwi10.github.io/posts/index.xml" rel="alternate" type="application/rss+xml" title="TLDR;" />
-  <link href="https://rezadwi10.github.io/posts/index.xml" rel="feed" type="application/rss+xml" title="TLDR;" />
 
 
 <script type="application/javascript">
@@ -105,67 +102,82 @@ if (!doNotTrack) {
 </div>
 
               
-  <div class="col-xs-12 col-sm-8 col-md-9 content-column">
-    <div class="small-navbar visible-xs">
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
+  <div class="small-navbar visible-xs">
   <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
   <h1 class="small-navbar-heading"><a href="https://rezadwi10.github.io/">TLDR;</a></h1>
 </div>
 
-    <div class="grid">
-        <div class="row">
-          
-              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
-                  <div class="box-masonry">
-                      
-                        
-                        <a href="https://rezadwi10.github.io/posts/node-screenshot-saved-my-day/" title="" class="box-masonry-image with-hover-overlay with-hover-icon">
-                        
-                            <img src="https://static.makeuseof.com/wp-content/uploads/2016/04/chrome-vs-firefox-2016-670x335.jpg" alt="" class="img-responsive">
-                        </a>
-                      
-                      
-                      <div class="box-masonry-text">
-                      
-                          <h4><a href="https://rezadwi10.github.io/posts/node-screenshot-saved-my-day/">Node Screenshot Saved My Day</a></h4>
-                          <div class="box-masonry-description">
-                            <p>
-                                
-                                  <p>Technical Documentation is a must-thing which I need to provide as a part of deliverables from technical team.</p>
-                                
-                            </p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          
-              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
-                  <div class="box-masonry">
-                      
-                        
-                        <a href="https://rezadwi10.github.io/posts/how-to-query/" title="" class="box-masonry-image with-hover-overlay with-hover-icon">
-                        
-                            <img src="https://purepng.com/public/uploads/large/purepng.com-oracle-logologobrand-logoiconslogos-251519939816xngul.png" alt="" class="img-responsive">
-                        </a>
-                      
-                      
-                      <div class="box-masonry-text">
-                      
-                          <h4><a href="https://rezadwi10.github.io/posts/how-to-query/">How to Query</a></h4>
-                          <div class="box-masonry-description">
-                            <p>
-                                
-                                  <p>Here&rsquo;s a brief summary, what i always do when asssigned to write time-consuming process in oracle SQL.</p>
-                                
-                            </p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          
-        </div>
-    </div>
-</div>
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="content-column-content">
+         <h1>Node Screenshot Saved My Day</h1>
+         <p>Technical Documentation is a must-thing which I need to provide as a part of deliverables from technical team.</p>
 
+<p>It is not like when you done coding, making sure it works, write beautiful commit message, push
+then just let the CI/CD do the works while hoping nothing&rsquo;s gonna bad happen in prod.</p>
+
+<blockquote>
+<p>Prod? the weirdest place where everything used to worked like charms</p>
+</blockquote>
+
+<p>In my current organization, I was asked to write structured technical documentation explain purpose of the project?
+What changes you made? How to compile and serve them? Lastly, a brief SIT scenario and the result.</p>
+
+<p>When, I was assigned to do web-based project, sometimes, I need to clearly explain &amp; capture what params I modified in
+a scrolled screen. Actually, I used to steps-scrolled down the screen and then capture the region and then highlighting
+the changes and then <kbd>ctrl+c</kbd> &amp; <kbd>ctrl+v</kbd> to the docs and keep doing this to the end of the screen.
+It is too time consuming effort for cheap jobs, till I give up and start to find replacement software which can
+do the job for me effortlessly.</p>
+
+<p>Then I found <a href="https://getsharex.com/">sharex</a>, it is light yet so powerfull. It contains area size and fullregion capture,
+it contains screen recording and the most important it has its own image editor to hightlight the screenshot. <img src="https://getsharex.com/img/ShareX_Animation.gif" alt="Sharex" /></p>
+
+<p>It was good, but I found much more simple solution, I can even capture specific node / tag from the HTML directly from the
+BROWSERS itself :(. Such a waste, since I tried so many utils. Here it is</p>
+
+<h3 id="chrome">Chrome</h3>
+
+<p>Open page you want to capture, right click on the area you want capture then click Inspect element.
+Select specific tag and then press <kbd>ctrl+shift+p</kbd>
+Choose <strong>Capture node screenshot</strong>. The image will be saved to your drive.</p>
+
+<p><img src="/img/posts/chrome-node-screenshot.png" alt="Node Chrome" /></p>
+
+<h3 id="firefox">Firefox</h3>
+
+<p>You can do this as well in firefox, it&rsquo;s about taste.
+Open page you want to capture, inspect element, choose node and then right click to it. Choose <strong>node screenshot</strong>. Done.</p>
+
+<p><img src="/img/posts/firefox-node-screenshot.png" alt="Node Firefox" /></p>
+
+<blockquote>
+<p>for highlighting, you can use sharex</p>
+</blockquote>
+         <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "rezadwi10-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  </div>
+</div>
 
           </div>
       </div>
