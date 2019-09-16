@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>Base24 NCPCOM GUI - TL;DR</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  <meta name="generator" content="Hugo 0.57.2" />
+  <meta itemprop="name" content="Base24 NCPCOM GUI">
+<meta itemprop="description" content="Starting this year on 2019, I&rsquo;ve been working on switching system development environment for almost 9 months.">
+
+
+<meta itemprop="datePublished" content="2019-09-11T17:34:30&#43;07:00" />
+<meta itemprop="dateModified" content="2019-09-11T17:34:30&#43;07:00" />
+<meta itemprop="wordCount" content="223">
+
+
+
+<meta itemprop="keywords" content="" />
+
+  <meta property="og:title" content="Base24 NCPCOM GUI" />
+<meta property="og:description" content="Starting this year on 2019, I&rsquo;ve been working on switching system development environment for almost 9 months." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rezadwi.github.io/blog/base24-ncpcom-gui/" />
+<meta property="article:published_time" content="2019-09-11T17:34:30+07:00" />
+<meta property="article:modified_time" content="2019-09-11T17:34:30+07:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Base24 NCPCOM GUI"/>
+<meta name="twitter:description" content="Starting this year on 2019, I&rsquo;ve been working on switching system development environment for almost 9 months."/>
+<meta name="twitter:site" content="@rezadwi10"/>
+
+  
+
+  <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/zenburn.min.css">
+  
+    
+      <link rel="stylesheet" href="/css/normalize.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css">
+      
+      <link rel="stylesheet" href="/css/font-awesome.all.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+      
+      
+      <link rel="stylesheet" href="/css/main.min.0a64f3eede6e78edc2d8b2ca7051e4d9a6379f472dac76b1168733b88d27146a.css" integrity="sha256-CmTz7t5ueO3C2LLKcFHk2aY3n0ctrHaxFoczuI0nFGo=">
+      <link rel="stylesheet" href="/css/add-on.css">
+    
+  
+  
+  
+  
+</head>
+
+  <body>
+    
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/">
+        
+          
+            Blog
+          
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu">
+      
+        
+          
+          
+            <a href="/" class="link"><i class='fa fa-home'></i> Home</a>
+          
+        
+      
+        
+          
+          
+            <a href="/about/" class="link"><i class='far fa-id-card'></i> About</a>
+          
+        
+      
+        
+          
+          
+            <a href="/blog/" class="link"><i class='far fa-newspaper'></i> Blog</a>
+          
+        
+      
+        
+          
+          
+            <a href="/categories/" class="link"><i class='fas fa-sitemap'></i> Categories</a>
+          
+        
+      
+      <a href="#share-menu" class="share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+      
+
+    </menu>
+    
+
+    <a href="#share-menu" class="share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+    <a href="#lang-menu" class="lang-toggle" lang="en">en</a>
+    <a href="#site-nav" class="nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="lang-menu" class="flyout-menu">
+  <a href="#" lang="en" class="link active">English (en)</a>
+  
+    
+      
+    
+  
+</menu>
+
+  
+    <menu id="share-menu" class="flyout-menu">
+      <h1>Share Post</h1>
+      
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=Base24%20NCPCOM%20GUI&amp;url=https%3a%2f%2frezadwi.github.io%2fblog%2fbase24-ncpcom-gui%2f" target="_blank" rel="noopener" class="share-btn twitter">
+        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2frezadwi.github.io%2fblog%2fbase24-ncpcom-gui%2f" target="_blank" rel="noopener" class="share-btn facebook">
+        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2frezadwi.github.io%2fblog%2fbase24-ncpcom-gui%2f&amp;title=Base24%20NCPCOM%20GUI" target="_blank" rel="noopener" class="share-btn linkedin">
+            <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="mailto:?subject=Check out this post by %7b%20%20%20%20%20%20%20%20map%5b%5d%7d&amp;body=https%3a%2f%2frezadwi.github.io%2fblog%2fbase24-ncpcom-gui%2f" target="_blank" class="share-btn email" data-proofer-ignore>
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+    </menu>
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro">
+  <a href="/"><img src="/img/about/avatar-logo.png" class="circle" width="" alt="Rezaa Dwi" /></a>
+  <header>
+    <h1>TL;DR</h1>
+  </header>
+  <main>
+    <p>My daily notes as a Software Engineer.</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/rezadwi10" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/reza-dwi-saputra/" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//instagram.com/rezadwi10" target="_blank" rel="noopener" title="Instagram" class="fab fa-instagram"></a></li>
+
+<li><a href="//twitter.com/rezadwi10" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:rezadwi@live.co.uk" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        <article class="post">
+  <header>
+  <div class="title">
+    
+        <h2><a href="/blog/base24-ncpcom-gui/">Base24 NCPCOM GUI</a></h2>
+    
+    
+</div>
+  <div class="meta">
+    <time class="published" datetime="2019-09-11 17:34:30 &#43;0700 &#43;0700">
+      September 11, 2019
+    </time>
+    <span class="author">Reza Dwi</span>
+    
+      <p>2 minutes read</p>
+    
+  </div>
+</header>
+
+  <section id="socnet-share">
+    
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=Base24%20NCPCOM%20GUI&amp;url=https%3a%2f%2frezadwi.github.io%2fblog%2fbase24-ncpcom-gui%2f" target="_blank" rel="noopener" class="share-btn twitter">
+        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2frezadwi.github.io%2fblog%2fbase24-ncpcom-gui%2f" target="_blank" rel="noopener" class="share-btn facebook">
+        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2frezadwi.github.io%2fblog%2fbase24-ncpcom-gui%2f&amp;title=Base24%20NCPCOM%20GUI" target="_blank" rel="noopener" class="share-btn linkedin">
+            <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="mailto:?subject=Check out this post by %7b%20%20%20%20%20%20%20%20map%5b%5d%7d&amp;body=https%3a%2f%2frezadwi.github.io%2fblog%2fbase24-ncpcom-gui%2f" target="_blank" class="share-btn email" data-proofer-ignore>
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+  </section>
+  
+  <a href="/blog/base24-ncpcom-gui/" class="image featured">
+    <img src="/img/posts/base24.png" alt="">
+  </a>
+
+
+  <div class="content">
+    <p>Starting this year on 2019, I&rsquo;ve been working on switching system development environment for almost 9 months.</p>
+
+<p>It was pretty new to me, all the syntaxes, utilities and development strategies. One of the most common utitilites
+we usualy use for development is NCPCOM (XPNET).</p>
+
+<p>XPNET is the central nervous system of all BASE24 payment solutions running on HPE NonStop.
+XPNET managing all driving data communications, controlling stations, lines and processes defined to it.
+It also routing transactions, managing transactions message queues, running system traces, generating and writing
+event messages to EMS (EMSPERUS), and so on.</p>
+
+<p>And to operate all of them, we use NCPCOM as the command interface to XPNET. NCPCOM stands for Network Control Point
+Communications, used to configure, operate, and monitor a XPNET environment.</p>
+
+<p>As long as I use this util for developement, it contains several repetitive commands we usually do, such as to start and stop stations,
+lines or processes, changing parameter and tracing the event messages.
+So, I developed a dotnet winforms application to interpreted all those commands to GUI using telnet program.
+Here&rsquo;s a preview:</p>
+
+<p><img src="/img/posts/ncpcom-gui.png" alt="NCPCOM" /></p>
+
+<p>It contains basic commands I mentioned eariler.</p>
+
+<blockquote>
+<p>based on what i usualy do</p>
+</blockquote>
+
+<p>It has lot of works to do, if you interested to try or maybe has an idea to new feature,
+reach me out through email for access to the repo.</p>
+  </div>
+  <footer>
+    <ul class="stats">
+  
+    
+    
+      <li class="categories">
+        <ul>
+          
+            
+            <li><a class="article-category-link" href="https://rezadwi.github.io/categories/base24">Base24</a></li>
+          
+        </ul>
+      </li>
+    
+  
+  
+    <li class="tags">
+      <ul>
+        <li>None</li>
+      </ul>
+    </li>
+  
+</ul>
+
+  </footer>
+</article>
+
+    <article class="post">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "rezadwi10-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </article>
+
+
+
+
+<div class="pagination">
+  
+    <a href="/blog/node-screenshot-saved-my-day/" class="button big previous"><i class="fas fa-angle-left"></i> Node Screenshot Saved My Day</a>
+  
+  
+</div>
+
+
+      </main>
+      <section id="site-sidebar">
+  
+    <section id="recent-posts">
+      <header>
+        <h1>Recent posts</h1>
+      </header>
+      
+      <article class="mini-post">
+        <section>
+          
+  <a href="/blog/base24-ncpcom-gui/" class="image featured">
+    <img src="/img/posts/base24.png" alt="">
+  </a>
+
+
+        </section>
+        <header>
+          <h1><a href="/blog/base24-ncpcom-gui/">Base24 NCPCOM GUI</a></h1>
+          <time class="published" datetime="">September 11, 2019</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+  <a href="/blog/node-screenshot-saved-my-day/" class="image featured">
+    <img src="/img/posts/chrome-vs-firefox.jpg" alt="">
+  </a>
+
+
+        </section>
+        <header>
+          <h1><a href="/blog/node-screenshot-saved-my-day/">Node Screenshot Saved My Day</a></h1>
+          <time class="published" datetime="">September 10, 2019</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+  <a href="/blog/how-to-query/" class="image featured">
+    <img src="/img/posts/oracle.png" alt="">
+  </a>
+
+
+        </section>
+        <header>
+          <h1><a href="/blog/how-to-query/">How to Query</a></h1>
+          <time class="published" datetime="">September 9, 2019</time>
+        </header>
+      </article>
+      
+      
+    </section>
+  
+
+  
+    
+      <section id="categories">
+        <header>
+          <h1><a href="/categories">Categories</a></h1>
+        </header>
+        <ul>
+          
+            
+          
+          
+          <li>
+            
+              <a href="/categories/tricks/">tricks<span class="count">2</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/base24/">base24<span class="count">1</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/oracle/">oracle<span class="count">1</span></a>
+            
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  <section id="mini-bio">
+    <header>
+      <h1>About</h1>
+    </header>
+    <p>Software Engineer, currently based on Jakarta. This site contains my daily notes as a Software Engineer.</p>
+    <footer>
+      <a href="/about" class="button">Learn More</a>
+    </footer>
+  </section>
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/rezadwi10" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/reza-dwi-saputra/" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//instagram.com/rezadwi10" target="_blank" rel="noopener" title="Instagram" class="fab fa-instagram"></a></li>
+
+<li><a href="//twitter.com/rezadwi10" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:rezadwi@live.co.uk" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+  
+  <p class="copyright">
+    
+      &copy; 2019
+      
+        TL;DR
+      
+    . <br>
+    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.57.2' target='_blank' rel='noopener'>Hugo</a>
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/sql.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+  <script src=/js/util.js></script>
+  <script src=/js/main.js></script>
+  <script src=/js/add-on.js></script>
+  
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-147439788-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    </div>
+  </body>
+</html>
